@@ -16,7 +16,7 @@ def preprocess_text(text):
     return ' '.join(filtered_words)
 
 # Carregar dados
-df = pd.read_excel(r'C:\Users\Administrador\Desktop\Similaridade\poemas.xlsx')
+df = pd.read_excel('./poemas.xlsx')
 
 # Remover linhas com valores nulos na coluna 'Content'
 df.dropna(subset=['Content'], inplace=True)
